@@ -182,7 +182,7 @@ namespace FinancialProductsWinforms
             // labelWarning
             // 
             this.labelWarning.AutoSize = true;
-            this.labelWarning.Location = new System.Drawing.Point(320, 230);
+            this.labelWarning.Location = new System.Drawing.Point(330, 240);
             this.labelWarning.Name = "labelWarning";
             this.labelWarning.Size = new System.Drawing.Size(0, 13);
             this.labelWarning.TabIndex = 9;
@@ -190,7 +190,7 @@ namespace FinancialProductsWinforms
             // labelInformation
             // 
             this.labelInformation.AutoSize = true;
-            this.labelInformation.Location = new System.Drawing.Point(279, 18);
+            this.labelInformation.Location = new System.Drawing.Point(289, 28);
             this.labelInformation.Name = "labelInformation";
             this.labelInformation.Size = new System.Drawing.Size(0, 13);
             this.labelInformation.TabIndex = 13;
@@ -206,10 +206,11 @@ namespace FinancialProductsWinforms
             this.tabControl1.Controls.Add(this.CombinateQuarterly);
             this.tabControl1.Controls.Add(this.CombinateQuarterlyWithInflation);
             this.tabControl1.Controls.Add(this.LoanRepayment);
-            this.tabControl1.Location = new System.Drawing.Point(27, 18);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(10, 10);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(372, 317);
+            this.tabControl1.Size = new System.Drawing.Size(377, 313);
             this.tabControl1.TabIndex = 16;
             // 
             // OneTimeInvest
@@ -227,7 +228,7 @@ namespace FinancialProductsWinforms
             this.OneTimeInvest.Location = new System.Drawing.Point(4, 22);
             this.OneTimeInvest.Name = "OneTimeInvest";
             this.OneTimeInvest.Padding = new System.Windows.Forms.Padding(3);
-            this.OneTimeInvest.Size = new System.Drawing.Size(364, 291);
+            this.OneTimeInvest.Size = new System.Drawing.Size(419, 333);
             this.OneTimeInvest.TabIndex = 0;
             this.OneTimeInvest.Text = "OneTimeInvest";
             this.OneTimeInvest.UseVisualStyleBackColor = true;
@@ -333,7 +334,7 @@ namespace FinancialProductsWinforms
             this.ShortTermInvest.Location = new System.Drawing.Point(4, 22);
             this.ShortTermInvest.Name = "ShortTermInvest";
             this.ShortTermInvest.Padding = new System.Windows.Forms.Padding(3);
-            this.ShortTermInvest.Size = new System.Drawing.Size(364, 291);
+            this.ShortTermInvest.Size = new System.Drawing.Size(419, 333);
             this.ShortTermInvest.TabIndex = 1;
             this.ShortTermInvest.Text = "ShortTermSavings";
             this.ShortTermInvest.UseVisualStyleBackColor = true;
@@ -431,7 +432,7 @@ namespace FinancialProductsWinforms
             this.ShortPreTerm.Controls.Add(this.label8);
             this.ShortPreTerm.Location = new System.Drawing.Point(4, 22);
             this.ShortPreTerm.Name = "ShortPreTerm";
-            this.ShortPreTerm.Size = new System.Drawing.Size(364, 291);
+            this.ShortPreTerm.Size = new System.Drawing.Size(419, 333);
             this.ShortPreTerm.TabIndex = 2;
             this.ShortPreTerm.Text = "ShortPreTerm";
             this.ShortPreTerm.UseVisualStyleBackColor = true;
@@ -543,7 +544,7 @@ namespace FinancialProductsWinforms
             this.LongTerm.Controls.Add(this.label12);
             this.LongTerm.Location = new System.Drawing.Point(4, 22);
             this.LongTerm.Name = "LongTerm";
-            this.LongTerm.Size = new System.Drawing.Size(364, 291);
+            this.LongTerm.Size = new System.Drawing.Size(419, 333);
             this.LongTerm.TabIndex = 3;
             this.LongTerm.Text = "LongTerm";
             this.LongTerm.UseVisualStyleBackColor = true;
@@ -649,7 +650,7 @@ namespace FinancialProductsWinforms
             this.CombinateSavingsMonthly.Controls.Add(this.numericUpDownSavingTimeCombinateMonthly);
             this.CombinateSavingsMonthly.Location = new System.Drawing.Point(4, 22);
             this.CombinateSavingsMonthly.Name = "CombinateSavingsMonthly";
-            this.CombinateSavingsMonthly.Size = new System.Drawing.Size(364, 291);
+            this.CombinateSavingsMonthly.Size = new System.Drawing.Size(369, 287);
             this.CombinateSavingsMonthly.TabIndex = 4;
             this.CombinateSavingsMonthly.Text = "CombinateSavMonthly";
             this.CombinateSavingsMonthly.UseVisualStyleBackColor = true;
@@ -1155,7 +1156,6 @@ namespace FinancialProductsWinforms
             this.buttonLoanRepayment.TabIndex = 36;
             this.buttonLoanRepayment.Text = "Zjisti hodnotu";
             this.buttonLoanRepayment.UseVisualStyleBackColor = true;
-            //this.buttonLoanRepayment.Click += new System.EventHandler(this.buttonLoanRepayment_Click);
             // 
             // numericUpDownInterestRateLoanRepayment
             // 
@@ -1225,12 +1225,13 @@ namespace FinancialProductsWinforms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(427, 359);
+            this.ClientSize = new System.Drawing.Size(397, 333);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.labelWarning);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FinancialProducts";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Financial products";
             this.tabControl1.ResumeLayout(false);
             this.OneTimeInvest.ResumeLayout(false);
